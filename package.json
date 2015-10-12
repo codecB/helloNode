@@ -1,0 +1,17 @@
+{
+  "name": "nw-demo",
+  "version": "0.0.1",
+  "main": "./html/index.html",
+  "window": {
+    "title": "node-webkit demo",
+    "toolbar": false,
+    "width": 1400,
+    "height": 600,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 1600,
+    "max_height": 1600,
+    "fullscreen":false
+  }
+}
