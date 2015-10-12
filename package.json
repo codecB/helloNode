@@ -4,10 +4,10 @@
   "main": "./html/index.html",
   "window": {
     "title": "node-webkit demo",
-    "toolbar": false,
+    "toolbar": true,
     "width": 1400,
     "height": 600,
-    "position": "mouse",
+    "position": "center",
     "min_width": 400,
     "min_height": 200,
     "max_width": 1600,
