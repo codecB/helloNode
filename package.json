@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "main": "./html/index.html",
   "window": {
-    "title": "node-webkit demo",
-    "toolbar": true,
-    "width": 1400,
+    "title": "City Mover",
+    "toolbar": false,
+    "width": 1300,
     "height": 600,
     "position": "center",
     "min_width": 400,

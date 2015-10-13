@@ -8,6 +8,46 @@ function onDeleteButtonClicked(){
     }
 }
 
+function onShuffleButtonClicked(){
+    //var seq = ['london','paris','tokyo','beijing'];
+    //shuffle(seq);
+
+    var london = document.getElementById('london');
+    var paris = document.getElementById('paris');
+    var tokyo = document.getElementById('tokyo');
+    var beijing = document.getElementById('beijing');
+
+    var cities = [london,paris,tokyo,beijing];
+    shuffle(cities);
+
+    var cityNames = [];
+    for(var i in cities){
+        cityNames.push(cities[i].id);
+        cities[3].parentNode.insertBefore(cities[i],cities[3]);
+    }
+    //document.getElementById('count').innerHTML = cityNames;
+
+
+}
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
