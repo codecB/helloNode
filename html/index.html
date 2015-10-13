@@ -11,6 +11,11 @@
     border: 1px solid black;
 }
 
+button {
+    webkit-app-region: no-drag;
+    background-color: aqua;
+}
+
 #london {
     background-color:blue;
 }
@@ -29,9 +34,13 @@
 </style>
 <script  src="../js/main.js"></script>
 </head>
-<body>
+<body style="-webkit-app-region: drag;">
+
 <button type="button" onclick="onDeleteButtonClicked()">Delete</button>
-<button type="button" onclick="onShuffleButtonClicked()">Shuffle</button>
+<button type="button" onclick="onShuffleButtonClicked()" style="-webkit-app-region: no-drag;">Shuffle</button>
+
+<button type="button" onclick="minimize()">Minimize</button>
+<button type="button" onclick="close2()">Close</button>
 <div id="count"></div>
 
 <h1>Major <span style="color:red">cities</span> in the world</h1>

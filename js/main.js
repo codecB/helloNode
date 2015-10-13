@@ -23,11 +23,23 @@ function onShuffleButtonClicked(){
     var cityNames = [];
     for(var i in cities){
         cityNames.push(cities[i].id);
-        cities[3].parentNode.insertBefore(cities[i],cities[3]);
+        cities[cities.length-1].parentNode.insertBefore(cities[i],cities[cities.length-1]);
     }
     //document.getElementById('count').innerHTML = cityNames;
 
 
+}
+
+function minimize(){
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+    win.minimize();
+}
+
+function close2(){
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+    win.close();
 }
 
 function shuffle(array) {

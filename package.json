@@ -4,14 +4,17 @@
   "main": "./html/index.html",
   "window": {
     "title": "City Mover",
-    "toolbar": false,
-    "width": 1300,
+    "toolbar": true,
+    "frame": false,
+    "width": 1500,
     "height": 600,
     "position": "center",
     "min_width": 400,
     "min_height": 200,
     "max_width": 1600,
     "max_height": 1600,
-    "fullscreen":false
+    "fullscreen":false,
+    "resizable":true
+
   }
 }
